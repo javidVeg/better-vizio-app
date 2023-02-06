@@ -25,16 +25,33 @@ function App() {
               <FaSignal color='red' />
               <IoIosWifi color='red' />
               <BsBatteryFull color='red' />
-
-
             </div>
           </div>
           <div className='overflow-hidden h-auto bg-orange-200 flex justify-start'>search</div>
         </div>
       </header>
-      
-      <body>
-        
+
+      <body className='flex justify-center flex-col mt-[-140px]'>
+        <div className='flex flex-row justify-center gap-8'>
+          <div className='flex flex-col gap-3'>
+            <button className='w-12 h-12 bg-slate-300'></button>
+            <button className='w-12 h-12 bg-slate-300'></button>
+          </div>
+          <div className='flex flex-col gap-3'>
+            <button className='w-12 h-12 bg-slate-300'></button>
+            <button className='w-12 h-12 bg-slate-300'></button>
+          </div>
+          <div className='flex flex-col gap-3'>
+            <button className='w-12 h-12 bg-slate-300'></button>
+            <button className='w-12 h-12 bg-slate-300'></button>
+          </div>
+          <div className='flex flex-col'>
+            <button className='w-12 h-14 bg-slate-300'></button>
+            <button className='w-12 h-14 bg-slate-300'></button>
+          </div>
+        </div>
+        <div className=' rounded-lg w-[300px] h-[250px] bg-slate-200'>
+        </div>
       </body>
 
       <footer className=' h-20 w-[380px] bg-zinc-700 absolute bottom-0 flex flex-col justify-end items-center'>
@@ -44,19 +61,19 @@ function App() {
             <p className=' text-white  text-[.6rem] font-[800]'>Remote</p>
           </div>
           <div className=' flex flex-col justify-center items-center gap-1'>
-            <AiFillAppstore  size={20} color='white' />
-            <p className =' text-white  text-[.6rem] font-[800]'>Apps</p>
+            <AiFillAppstore size={20} color='white' />
+            <p className=' text-white  text-[.6rem] font-[800]'>Apps</p>
           </div>
           <div className=' flex flex-col justify-center items-center gap-1'>
             <GiPopcorn size={20} color='white' />
             <p className=' text-white  text-[.6rem] font-[800]'>Browse</p>
           </div>
           <div className=' flex flex-col justify-center items-center gap-1'>
-            <BiMessage  size={20} color='white' />
+            <BiMessage size={20} color='white' />
             <p className=' text-white  text-[.6rem] font-[800]'>VIZIOGram</p>
           </div>
           <div className=' flex flex-col justify-center items-center gap-1'>
-            <FiUser  size={20} color='white' />
+            <FiUser size={20} color='white' />
             <p className=' text-white  text-[.6rem] font-[800]'>User</p>
           </div>
         </div>
