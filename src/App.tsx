@@ -9,6 +9,7 @@ import { GiPopcorn } from 'react-icons/gi';
 import { BiMessage } from 'react-icons/bi';
 import { FiUser } from 'react-icons/fi';
 import './App.css'
+import MainNavButton from './MainNavButton';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -50,7 +51,8 @@ function App() {
             <button className='w-12 h-14 bg-slate-300'></button>
           </div>
         </div>
-        <div className=' rounded-lg w-[300px] h-[250px] bg-slate-200'>
+        <div className=''>
+          <MainNavButton/>
         </div>
       </body>
 
