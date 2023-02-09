@@ -8,6 +8,15 @@ import { AiFillAppstore } from 'react-icons/ai';
 import { GiPopcorn } from 'react-icons/gi';
 import { BiMessage } from 'react-icons/bi';
 import { FiUser } from 'react-icons/fi';
+import { MdCable } from 'react-icons/md';
+import { AiFillSetting } from 'react-icons/ai';
+import { FaClosedCaptioning } from 'react-icons/fa';
+import { ImHome3 } from 'react-icons/im';
+import { FaKeyboard } from 'react-icons/fa';
+import { MdKeyboardVoice } from 'react-icons/md';
+import { ImVolumeMute2 } from 'react-icons/im';
+import { HiPlus } from 'react-icons/hi';
+import { HiMinus } from 'react-icons/hi';
 import './App.css'
 import MainNavButton from './MainNavButton';
 
@@ -35,20 +44,21 @@ function App() {
       <body className='flex justify-center flex-col mt-[-140px]'>
         <div className='flex flex-row justify-center gap-8'>
           <div className='flex flex-col gap-3'>
-            <button className='w-12 h-12 bg-slate-300'></button>
-            <button className='w-12 h-12 bg-slate-300'></button>
+            <button className='w-12 h-12 bg-slate-300'><MdCable/></button>
+            <button className='w-12 h-12 bg-slate-300'><AiFillSetting/></button>
           </div>
           <div className='flex flex-col gap-3'>
-            <button className='w-12 h-12 bg-slate-300'></button>
-            <button className='w-12 h-12 bg-slate-300'></button>
+            <button className='w-12 h-12 bg-slate-300'><FaClosedCaptioning/></button>
+            <button className='w-12 h-12 bg-slate-300'><ImHome3/></button>
           </div>
           <div className='flex flex-col gap-3'>
-            <button className='w-12 h-12 bg-slate-300'></button>
-            <button className='w-12 h-12 bg-slate-300'></button>
+            <button className='w-12 h-12 bg-slate-300'><FaKeyboard/></button>
+            <button className='w-12 h-12 bg-slate-300'><MdKeyboardVoice/></button>
           </div>
           <div className='flex flex-col'>
-            <button className='w-12 h-14 bg-slate-300'></button>
-            <button className='w-12 h-14 bg-slate-300'></button>
+            <button className='w-12 h-10 bg-slate-300'><HiPlus/></button>
+            <button className='w-12 h-8 bg-slate-300'><ImVolumeMute2/></button>
+            <button className='w-12 h-10 bg-slate-300'><HiMinus/></button>
           </div>
         </div>
         <div className=''>
