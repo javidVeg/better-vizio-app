@@ -7,7 +7,6 @@ import { AiFillAppstore } from 'react-icons/ai';
 import { GiPopcorn } from 'react-icons/gi';
 import { BiMessage } from 'react-icons/bi';
 import { FiUser } from 'react-icons/fi';
-
 import './App.css'
 import MainNavButton from './MainNavButton';
 import ControlButtons from './ControlButtons';
@@ -17,6 +16,7 @@ function App() {
 
   return (
     <main className="App">
+      
       <header className='h-28 bg-zinc-700'>
         <div className=' overflow-hidden relative h-12 bg-red-400 flex flex-col '>
           <div className='relative h-9 bg-lime-200 flex flex-row '>
@@ -33,14 +33,15 @@ function App() {
         </div>
       </header>
 
-      <body className='flex justify-center flex-col mt-[-140px]'>
-        <div>
+      <div className='flex justify-center flex-col mt-[60px]'>
+        <div className=' z-20'>
           <ControlButtons/>
         </div>
-        <div className=''>
+        <div className='z-20'>
           <MainNavButton/>
         </div>
-      </body>
+        <div className='gradient-1 z-0'></div>
+      </div>
 
       <footer className=' h-20 w-[380px] bg-zinc-700 absolute bottom-0 flex flex-col justify-end items-center'>
         <div className='flex flex-row justify-start items-start gap-9 mb-4'>

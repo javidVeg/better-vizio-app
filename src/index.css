@@ -18,6 +18,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* ,html{
+  transition: all 2s ease-out;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
