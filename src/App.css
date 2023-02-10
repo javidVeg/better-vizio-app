@@ -52,5 +52,11 @@ li{
   cursor: pointer;
 }
 
+.menu-bg{
+  background-image: linear-gradient(90deg, rgba(33, 33, 33, 0.6), rgb(255, 115, 0));
+  background-size: 500px;
+  
+}
+
 
 

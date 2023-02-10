@@ -7,6 +7,7 @@ import { AiFillAppstore } from 'react-icons/ai';
 import { GiPopcorn } from 'react-icons/gi';
 import { BiMessage } from 'react-icons/bi';
 import { FiUser } from 'react-icons/fi';
+import { FiPower } from 'react-icons/fi';
 import './App.css'
 import MainNavButton from './MainNavButton';
 import ControlButtons from './ControlButtons';
@@ -18,7 +19,7 @@ function App() {
   return (
     <main className="App">
 
-      <header className='h-28 bg-zinc-700'>
+      <header className='h-[5.5rem] bg-zinc-700'>
         <div className=' overflow-hidden relative h-8 bg-zinc-700 flex flex-col '>
           <div className='relative h-9 bg-zinc-700 flex flex-row '>
             <div className='w-1/2 h-full bg-zinc-700 flex justify-start'>
@@ -31,13 +32,14 @@ function App() {
             </div>
           </div>
         </div>
-        <div>
+        <div className=' ml-5 flex flex-row gap-11 items-center '>
         <TvSelection/>
+        <FiPower size={30} color='red'/>
         </div>
       </header>
 
 
-      <div className='flex justify-center flex-col mt-[60px]'>
+      <div className='flex justify-center flex-col mt-[120px]'>
         <div className=' z-20'>
           <ControlButtons />
         </div>
