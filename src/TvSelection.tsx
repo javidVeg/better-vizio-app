@@ -38,8 +38,8 @@ const TvSelection = () => {
     const items = ["Living Room TV", "Andrew's Room TV", "Bedroom TV"]
 
     return (
-        <main className='menu-bg relative flex flex-row justify-between w-[200px] h-[50px]  border-white border-opacity-30 border-solid border-[1.5px] rounded-lg'>
-            <div className='ml-1 flex flex-row justify-center items-center'>
+        <main className='menu-bg relative flex flex-row justify-between w-[200px] h-[50px]  border-white border-l-1 border-opacity-30 border-solid border-[1.5px] rounded-lg'>
+            <div className='ml-3 flex flex-row justify-center items-center'>
                 {/* <BsFillTvFill color='white' /> */}
                 <div className='flex flex-col text-left'>
                     <p className='text-xs font-semibold text-white'>
@@ -52,13 +52,12 @@ const TvSelection = () => {
             </div>
             <div className='flex flex-col justify-center items-center'>
                 <button className=' bg-transparent text-white' onClick={handleMenu}><BsCaretDownSquare /></button>
-                {menu && <div className='w-[200px] bg-white bg-opacity-60 absolute top-[50px] left-[-2px] rounded'>
+                {menu && <div className='w-[200px] bg-white bg-opacity-90 absolute top-[50px] left-[-1px] rounded'>
                     <ul >
                         {items.map(item => (
-                            <li className=' border-black border-opacity-30 
-                            border-t-[1.5px]  border-l-0 border-r-0 border-b-0 border-solid
-                             text-left text-sm font-medium ml-2 mr-2' key={item} onClick={() => handleItem(item)}>
-                                <p className=' text-black hover:bg-white hover:bg-opacity-30'>{item}</p>
+                            <li className=' 
+                             text-left text-sm font-medium p-1' key={item} onClick={() => handleItem(item)}>
+                                <p className=' text-black  hover:bg-slate-800 hover:bg-opacity-20'>{item}</p>
                             </li>
                         ))}
                     </ul>

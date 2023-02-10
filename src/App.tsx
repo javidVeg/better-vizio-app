@@ -35,7 +35,7 @@ function App() {
         </div>
         <div className=' ml-5 flex flex-row gap-20 items-center '>
         <TvSelection/>
-        <FiPower size={30} color='red'/>
+        <FiPower size={30} color='red' />
         </div>
       </header>
       <div  className=' absolute w-[360px] top-[3rem] z-0'>
@@ -55,10 +55,11 @@ function App() {
       </div>
 
       <footer className=' h-18 w-[360px] bg-zinc-700 absolute bottom-0 flex flex-col justify-end items-center'>
-        <div className='flex flex-row justify-start items-start gap-9 p-2'>
+        <div className='flex flex-row justify-start items-start gap-9 pl-2 pr-2 pt-2 pb-1'>
           <div className=' flex flex-col justify-center items-center gap-1'>
             <MdSettingsRemote size={20} color='white' />
             <p className=' text-white  text-[.6rem] font-[800]'>Remote</p>
+            <div className='h-1 bg-[rgb(255,_115,_0)] w-6 p-0 m-0 rounded-xl' ></div>
           </div>
           <div className=' flex flex-col justify-center items-center gap-1'>
             <AiFillAppstore size={20} color='white' />
@@ -77,7 +78,7 @@ function App() {
             <p className=' text-white  text-[.6rem] font-[800]'>User</p>
           </div>
         </div>
-        <div className='mb-[.35rem] h-2 bg-white w-40 rounded-xl' ></div>
+        <div className='mb-[.35rem] h-1 bg-white w-36 rounded-xl' ></div>
       </footer>
     </main>
   )
