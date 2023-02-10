@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { FaSignal } from 'react-icons/fa';
 import { IoIosWifi } from 'react-icons/io';
 import { BsBatteryFull } from 'react-icons/bs';
@@ -11,12 +11,35 @@ import './App.css'
 import MainNavButton from './MainNavButton';
 import ControlButtons from './ControlButtons';
 
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [menu, setMenu] = useState(false)
+  const [selectItem, setSelectItem] = useState("")
+
+  const handleMenu = () => {
+    if (!menu) {
+      setMenu(true)
+      console.log("true")
+    } else {
+      setMenu(false)
+      console.log("false")
+    }
+
+  }
+
+  const handleItem = (item) => {
+    setSelectItem(item)
+  }
+  useEffect(() => {
+    console.log(selectItem)
+    
+  },[selectItem])
+
+  const items = ["tv1", "tv2", "tv3"]
 
   return (
     <main className="App">
-      
+
       <header className='h-28 bg-zinc-700'>
         <div className=' overflow-hidden relative h-8 bg-zinc-700 flex flex-col '>
           <div className='relative h-9 bg-zinc-700 flex flex-row '>
@@ -31,22 +54,26 @@ function App() {
           </div>
         </div>
         <div>
-          <ul>
-            <li>TV 1</li>
-            <li>TV 2</li>
-            <li>TV 3</li>
-            <li>Tv 4</li>
-          </ul>
+          <button className=' bg-transparent text-white' onClick={handleMenu}>V</button>
+          {menu && <div>
+            <ul >
+              {items.map(item => (
+                <li key={item} onClick={() => handleItem(item)}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>}
         </div>
       </header>
-      
+
 
       <div className='flex justify-center flex-col mt-[60px]'>
         <div className=' z-20'>
-          <ControlButtons/>
+          <ControlButtons />
         </div>
         <div className='z-20'>
-          <MainNavButton/>
+          <MainNavButton />
         </div>
         <div className='gradient-1 z-0'></div>
       </div>
