@@ -32,14 +32,14 @@ function App() {
             </div>
           </div>
         </div>
-        <div className=' ml-5 flex flex-row gap-11 items-center '>
+        <div className=' ml-5 flex flex-row gap-20 items-center '>
         <TvSelection/>
         <FiPower size={30} color='red'/>
         </div>
       </header>
 
 
-      <div className='flex justify-center flex-col mt-[120px]'>
+      <div className='flex justify-center flex-col mt-[100px]'>
         <div className=' z-20'>
           <ControlButtons />
         </div>
