@@ -58,5 +58,11 @@ li{
   
 }
 
+.fade-gradient{
+  background-image: linear-gradient( rgba(0, 0, 0, 0),rgba(18, 18, 18) 58% );
+  padding-top: 200px;
+  
+}
+
 
 

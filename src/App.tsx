@@ -12,6 +12,7 @@ import './App.css'
 import MainNavButton from './MainNavButton';
 import ControlButtons from './ControlButtons';
 import TvSelection from './TvSelection';
+import movie1 from "./assets/avengers.png"
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
   return (
     <main className="App">
 
-      <header className='h-[5.5rem] bg-zinc-700'>
+      <header className='relative h-[5.5rem] bg-zinc-700 z-50'>
         <div className=' overflow-hidden relative h-8 bg-zinc-700 flex flex-col '>
           <div className='relative h-9 bg-zinc-700 flex flex-row '>
             <div className='w-1/2 h-full bg-zinc-700 flex justify-start'>
@@ -37,6 +38,10 @@ function App() {
         <FiPower size={30} color='red'/>
         </div>
       </header>
+      <div  className=' absolute w-[380px] top-[3rem] z-0'>
+        <img src={movie1} alt="movie-poster" className='' />
+        <div className=' fade-gradient absolute top-20 w-[380px] h-20'></div>
+      </div>
 
 
       <div className='flex justify-center flex-col mt-[100px]'>
