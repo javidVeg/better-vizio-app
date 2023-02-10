@@ -10,33 +10,11 @@ import { FiUser } from 'react-icons/fi';
 import './App.css'
 import MainNavButton from './MainNavButton';
 import ControlButtons from './ControlButtons';
+import TvSelection from './TvSelection';
 
 
 function App() {
-  const [menu, setMenu] = useState(false)
-  const [selectItem, setSelectItem] = useState("")
-
-  const handleMenu = () => {
-    if (!menu) {
-      setMenu(true)
-      console.log("true")
-    } else {
-      setMenu(false)
-      console.log("false")
-    }
-
-  }
-
-  const handleItem = (item) => {
-    setSelectItem(item)
-  }
-  useEffect(() => {
-    console.log(selectItem)
-    
-  },[selectItem])
-
-  const items = ["tv1", "tv2", "tv3"]
-
+  
   return (
     <main className="App">
 
@@ -54,16 +32,7 @@ function App() {
           </div>
         </div>
         <div>
-          <button className=' bg-transparent text-white' onClick={handleMenu}>V</button>
-          {menu && <div>
-            <ul >
-              {items.map(item => (
-                <li key={item} onClick={() => handleItem(item)}>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>}
+        <TvSelection/>
         </div>
       </header>
 
