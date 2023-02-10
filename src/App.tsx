@@ -38,24 +38,24 @@ function App() {
         <FiPower size={30} color='red'/>
         </div>
       </header>
-      <div  className=' absolute w-[380px] top-[3rem] z-0'>
+      <div  className=' absolute w-[360px] top-[3rem] z-0'>
         <img src={movie1} alt="movie-poster" className='' />
-        <div className=' fade-gradient absolute top-20 w-[380px] h-20'></div>
+        <div className=' z-10 fade-gradient absolute top-20 w-[360px] h-20'></div>
       </div>
 
 
-      <div className='flex justify-center flex-col mt-[100px]'>
+      <div className='flex justify-center flex-col mt-[115px]'>
         <div className=' z-20'>
           <ControlButtons />
         </div>
         <div className='z-20'>
           <MainNavButton />
         </div>
-        <div className='gradient-1 z-0'></div>
+        <div className='gradient-1 z-[0]'></div>
       </div>
 
-      <footer className=' h-20 w-[380px] bg-zinc-700 absolute bottom-0 flex flex-col justify-end items-center'>
-        <div className='flex flex-row justify-start items-start gap-9 mb-4'>
+      <footer className=' h-18 w-[360px] bg-zinc-700 absolute bottom-0 flex flex-col justify-end items-center'>
+        <div className='flex flex-row justify-start items-start gap-9 p-2'>
           <div className=' flex flex-col justify-center items-center gap-1'>
             <MdSettingsRemote size={20} color='white' />
             <p className=' text-white  text-[.6rem] font-[800]'>Remote</p>

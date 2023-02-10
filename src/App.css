@@ -1,5 +1,5 @@
 #root {
-  width: 380px;
+  width: 360px;
   height: 100vh;
   margin: 0 auto;
   padding: 0;
@@ -14,29 +14,29 @@
 
 @keyframes moves {
   0% {
-    transform: translate(60%, -50%) rotate(-180deg)
+    transform: translate(200px, 100px) rotate(-180deg)
   }
   
   70% {
-    transform: translate(-20%, 80%) rotate(90deg)
+    transform: translate(80px, -100px) rotate(90deg)
   }
   
   100% {
   
-    transform: translate(70%, 100%) rotate(180deg)
+    transform: translate(-80px, 100px) rotate(180deg)
   }
 
 }
 
 .gradient-1 {
   --easing: ease-in-out;
-  width: 300px;
+  width: 200px;
   height: 200px;
-  filter: blur(65px);
+  filter: blur(60px);
   background-image: linear-gradient(90deg, rgb(255, 86, 1), #ff66c2) ;
   animation: moves 25s linear alternate infinite;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  margin-top: -400px;
+  margin-top: -200px;
   margin-left: -10px;
 }
 

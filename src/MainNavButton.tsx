@@ -7,7 +7,7 @@ import './App.css'
 const MainNavButton = () => {
     return (
         <main className='flex flex-col justify-center items-center'>
-            <div className='relative w-[280px] h-[280px] bg-white bg-opacity-40 mt-2 rounded-xl'>
+            <div className='shadow-[0px_0px_5px_0px_black] relative w-[280px] h-[280px] bg-white bg-opacity-60 mt-2 rounded-xl'>
                 <button className='absolute w-[140px] h-[140px] bg-slate-300 left-[4.4rem] 
                 bottom-[4.3rem] grid place-content-center drop-shadow-[0px_0px_10px_#4D4D4D]
                  hover:drop-shadow-[0px_0px_10px_#2c1263]'>
