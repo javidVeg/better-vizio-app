@@ -18,20 +18,28 @@ function App() {
     <main className="App">
       
       <header className='h-28 bg-zinc-700'>
-        <div className=' overflow-hidden relative h-12 bg-red-400 flex flex-col '>
-          <div className='relative h-9 bg-lime-200 flex flex-row '>
-            <div className='w-1/2 h-full bg-white flex justify-start'>
-              <h2>3:33</h2>
+        <div className=' overflow-hidden relative h-8 bg-zinc-700 flex flex-col '>
+          <div className='relative h-9 bg-zinc-700 flex flex-row '>
+            <div className='w-1/2 h-full bg-zinc-700 flex justify-start'>
+              <h2 className=' font-semibold ml-10 text-white mt-1'>13:33</h2>
             </div>
-            <div className='w-1/2 h-full bg-slate-500 flex flex-row justify-end'>
-              <FaSignal color='red' />
-              <IoIosWifi color='red' />
-              <BsBatteryFull color='red' />
+            <div className='w-1/2 h-full bg-zinc-700 flex flex-row justify-end mr-5 gap-2 mt-2'>
+              <FaSignal color='white' />
+              <IoIosWifi color='white' />
+              <BsBatteryFull color='white' />
             </div>
           </div>
-          <div className='overflow-hidden h-auto bg-orange-200 flex justify-start'>search</div>
+        </div>
+        <div>
+          <ul>
+            <li>TV 1</li>
+            <li>TV 2</li>
+            <li>TV 3</li>
+            <li>Tv 4</li>
+          </ul>
         </div>
       </header>
+      
 
       <div className='flex justify-center flex-col mt-[60px]'>
         <div className=' z-20'>

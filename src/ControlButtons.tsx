@@ -14,25 +14,29 @@ const ControlButtons = () => {
         <main>
             <div className='flex flex-row justify-center gap-8'>
                 <div className='flex flex-col gap-3'>
-                    <button className='w-12 h-12 bg-slate-300 grid place-content-center'><MdCable size={20} /></button>
-                    <button className='w-12 h-12 bg-slate-300 grid place-content-center'><AiFillSetting size={20} /></button>
+                    <button className='w-12 h-12 bg-white bg-opacity-40 grid place-content-center'><MdCable size={20} /></button>
+                    <button className='w-12 h-12 bg-white bg-opacity-40 grid place-content-center'><AiFillSetting size={20} /></button>
                 </div>
                 <div className='flex flex-col gap-3'>
-                    <button className='w-12 h-12 bg-slate-300 grid place-content-center'><FaClosedCaptioning size={20} /></button>
-                    <button className='w-12 h-12 bg-slate-300 grid place-content-center'><ImHome3 size={20} /></button>
+                    <button className='w-12 h-12 bg-white bg-opacity-40 grid place-content-center'><FaClosedCaptioning size={20} /></button>
+                    <button className='w-12 h-12 bg-white bg-opacity-40 grid place-content-center'><ImHome3 size={20} /></button>
                 </div>
                 <div className='flex flex-col gap-3'>
-                    <button className='w-12 h-12 bg-slate-300 grid place-content-center'><FaKeyboard size={20} /></button>
-                    <button className='w-12 h-12 bg-slate-300 grid place-content-center'><MdKeyboardVoice size={25} /></button>
+                    <button className='w-12 h-12 bg-white bg-opacity-40 grid place-content-center'><FaKeyboard size={20} /></button>
+                    <button className='w-12 h-12 bg-white bg-opacity-40 grid place-content-center'><MdKeyboardVoice size={25} /></button>
                 </div>
                 <div className='flex flex-col rounded-[10.5px] '>
-                    <button className='w-12 h-10 bg-slate-300 grid place-content-center rounded-b-none'>
+                    <button className='w-12 h-10 bg-white bg-opacity-40 grid place-content-center rounded-b-none border-t-0 border-l-0 
+                    border-r-0 border-b-[.8px] border-solid border-black'>
                         <HiPlus size={20} />
                     </button>
-                    <button className='w-12 h-8 bg-slate-300 grid place-content-center rounded-r-none rounded-l-none'>
+                    <button className='w-12 h-8 bg-white bg-opacity-40 grid place-content-center rounded-r-none rounded-l-none'>
                         <ImVolumeMute2 size={15} />
-                        </button>
-                    <button className='w-12 h-10 bg-slate-300 grid place-content-center rounded-t-none'><HiMinus size={20} /></button>
+                    </button>
+                    <button className='w-12 h-10 bg-white bg-opacity-40 grid place-content-center rounded-t-none border-t-[.8px] border-l-0 
+                    border-r-0 border-b-0 border-solid border-black'>
+                        <HiMinus size={20} />
+                    </button>
                 </div>
             </div>
         </main>
